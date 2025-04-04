@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <p>Select your grading scale:</p>
+        <div class="options">
+            <button onclick="location.href='10-point.html'" class="scale-btn">10-Point Scale</button>
+            <button onclick="location.href='5-point.html'" class="scale-btn">5-Point Scale</button>
+        </div>
+
+        <div class="instructions-box">
+            <h2>How to Calculate</h2>
+            <div class="instructions">
+                <div class="instruction-section">
+                    <h3>For GPA Calculation:</h3>
+                    <ol>
+                        <li>Select your grading scale</li>
+                        <li>Click "Calculate GPA"</li>
+                        <li>Add subjects using "Add Subject" button</li>
+                        <li>Enter Subject name, Grade, and Credits</li>
+                        <li>Click "Calculate GPA"</li>
+                    </ol>
+                </div>
+
+                <div class="instruction-section">
+                    <h3>For CGPA Calculation:</h3>
+                    <ol>
+                        <li>Select your grading scale</li>
+                        <li>Click "Calculate CGPA"</li>
+                        <li>Add semesters using "Add Semester" button</li>
+                        <li>Enter Semester name and GPA</li>
+                        <li>Click "Calculate CGPA"</li>
+                    </ol>
+                </div>
+
+                <div class="examples">
+                    <h3>Grade Points Reference:</h3>
+                    <div class="grade-examples">
+                        <div>
+                            <h4>10-Point Scale:</h4>
+                            <p>O=10, A+=9, A=8, B+=7<br>B=6, C=5, P=4, F=0</p>
+                        </div>
+                        <div>
+                            <h4>5-Point Scale:</h4>
+                            <p>A=5, B=4, C=3<br>D=2, E=1, F=0</p>
+                        </div>
+                    </div>
+                    <p class="note">Note: Credits should be whole numbers (1-5 typically)</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="developer-footer">
+            Built with ❤️ by 
+            <a href="https://github.com/gmallikarjunreddy" target="_blank" rel="noopener noreferrer">
+                gmallikarjunreddy
+            </a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
