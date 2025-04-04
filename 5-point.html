@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Point Scale Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>5-Point Scale Calculator</h1>
+        <div class="calc-type">
+            <button id="gpa-btn" class="active">Calculate GPA</button>
+            <button id="cgpa-btn">Calculate CGPA</button>
+        </div>
+
+        <div id="gpa-calculator">
+            <h2>GPA Calculator</h2>
+            <div id="subjects-container">
+                <div class="subject">
+                    <input type="text" class="subject-name" placeholder="Subject name">
+                    <select class="grade">
+                        <option value="">Select Grade</option>
+                        <option value="5">A (5)</option>
+                        <option value="4">B (4)</option>
+                        <option value="3">C (3)</option>
+                        <option value="2">D (2)</option>
+                        <option value="1">E (1)</option>
+                        <option value="0">F (0)</option>
+                    </select>
+                    <input type="number" class="credit" placeholder="Credits" min="1">
+                    <button class="remove-btn">×</button>
+                </div>
+            </div>
+            <button id="add-subject">Add Subject</button>
+            <button id="calculate-gpa">Calculate GPA</button>
+            <div id="gpa-result"></div>
+        </div>
+
+        <div id="cgpa-calculator" style="display: none;">
+            <h2>CGPA Calculator</h2>
+            <div id="semesters-container">
+                <div class="semester">
+                    <input type="text" class="semester-name" placeholder="Semester name">
+                    <input type="number" class="gpa" placeholder="GPA" min="0" max="5" step="0.01">
+                    <button class="remove-btn">×</button>
+                </div>
+            </div>
+            <button id="add-semester">Add Semester</button>
+            <button id="calculate-cgpa">Calculate CGPA</button>
+            <div id="cgpa-result"></div>
+        </div>
+
+        <footer class="developer-footer">
+            Built with ❤️ by 
+            <a href="https://github.com/gmallikarjunreddy" target="_blank" rel="noopener noreferrer">
+                gmallikarjunreddy
+            </a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
