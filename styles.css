@@ -1,0 +1,243 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Scale Selection Buttons */
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.scale-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.scale-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Calculator Toggle */
+.calc-type {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.calc-type button {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7f8c8d;
+    border-bottom: 3px solid transparent;
+}
+
+.calc-type button.active {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+}
+
+/* Subject/Semester Inputs */
+.subject, .semester {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.subject input, .subject select, .semester input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.subject-name {
+    flex: 2;
+}
+
+.grade {
+    flex: 1;
+}
+
+.credit, .gpa {
+    flex: 1;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Action Buttons */
+#add-subject, #add-semester, #calculate-gpa, #calculate-cgpa {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+#add-subject:hover, #add-semester:hover {
+    background-color: #27ae60;
+}
+
+#calculate-gpa, #calculate-cgpa {
+    background-color: #3498db;
+}
+
+#calculate-gpa:hover, #calculate-cgpa:hover {
+    background-color: #2980b9;
+}
+
+/* Results Display */
+#gpa-result, #cgpa-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}
+
+#gpa-result.show, #cgpa-result.show {
+    display: block;
+}
+
+.grade-point {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+/* Instructions Section */
+.instructions-box {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.instructions-box h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.instruction-section {
+    margin-bottom: 25px;
+}
+
+.instruction-section h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.instructions ol, .instructions ul {
+    margin-left: 20px;
+}
+
+.instructions li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.examples {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.grade-examples {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.grade-examples div {
+    text-align: center;
+}
+
+.grade-examples h4 {
+    color: #27ae60;
+    margin-bottom: 5px;
+}
+
+.note {
+    margin-top: 15px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Developer Footer */
+.developer-footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    color: #7f8c8d;
+    border-top: 1px solid #eee;
+}
+
+.developer-footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.developer-footer a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
