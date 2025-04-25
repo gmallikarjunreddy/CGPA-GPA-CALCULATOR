@@ -4,7 +4,7 @@
 
 # CGPA Calculator 🎓
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20Calculator-brightgreen)](https://gmallikarjunreddy.github.io/CGPA-Calculator)
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Calculator-brightgreen)](https://gmallikarjunreddy.github.io/CGPA-GPA-Calculator)
 [![GitHub License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Tech Stack](https://img.shields.io/badge/HTML-CSS-JS-orange)
 
