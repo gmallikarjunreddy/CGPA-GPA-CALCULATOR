@@ -22,8 +22,8 @@ A responsive web application for calculating **GPA** and **CGPA** in both 10-poi
 
 ## Installation 🛠️
 ```bash
-git clone https://github.com/gmallikarjunreddy/CGPA-Calculator.git
-cd CGPA-Calculator
+git clone https://github.com/gmallikarjunreddy/CGPA-GPA-Calculator.git
+cd CGPA-GPA-Calculator
 # Open index.html in any modern browser
 ```
 
